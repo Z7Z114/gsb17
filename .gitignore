@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+dist/
+build/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+.env
+ice_core_audio/
+*.wav
+*.wav.compensated
+.DS_Store

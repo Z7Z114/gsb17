@@ -1,0 +1,7 @@
+# 可选重型依赖：未安装时后端走确定性离线分支，不影响轻量路径与测试。
+librosa==0.10.1
+soundfile==0.12.1
+openai-whisper==20231117
+pyannote.audio==3.1.1
+openai==1.3.7
+apscheduler==3.10.4

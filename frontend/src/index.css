@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+}
+
+.ice-header {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.ice-logo {
+  color: #00d4ff !important;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.ice-content {
+  padding: 24px;
+  background: transparent;
+}
+
+.ice-card {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.ice-card .ant-card-head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.ice-card .ant-card-head-title {
+  color: #00d4ff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ice-stat-card {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(102, 126, 234, 0.1) 100%);
+  border: 1px solid rgba(0, 212, 255, 0.3) !important;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.ice-stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00d4ff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+}
+
+.ice-stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.speaker-engineer {
+  color: #ff7a45;
+  font-weight: 600;
+}
+
+.speaker-climatologist {
+  color: #36cfc9;
+  font-weight: 600;
+}
+
+.speaker-unknown {
+  color: #bfbfbf;
+  font-weight: 600;
+}
+
+.transcript-segment {
+  padding: 12px;
+  margin-bottom: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  border-left: 3px solid #00d4ff;
+}
+
+.transcript-segment.engineer {
+  border-left-color: #ff7a45;
+}
+
+.transcript-segment.climatologist {
+  border-left-color: #36cfc9;
+}
+
+.transcript-segment.unknown {
+  border-left-color: #bfbfbf;
+}
+
+.event-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.event-ice-age {
+  background: rgba(64, 158, 255, 0.2);
+  color: #4096ff;
+  border: 1px solid rgba(64, 158, 255, 0.3);
+}
+
+.event-interglacial {
+  background: rgba(82, 196, 26, 0.2);
+  color: #52c41a;
+  border: 1px solid rgba(82, 196, 26, 0.3);
+}
+
+.event-volcano {
+  background: rgba(255, 77, 79, 0.2);
+  color: #ff4d4f;
+  border: 1px solid rgba(255, 77, 79, 0.3);
+}
+
+.event-climate-change {
+  background: rgba(250, 173, 20, 0.2);
+  color: #faad14;
+  border: 1px solid rgba(250, 173, 20, 0.3);
+}
+
+.event-sea-level {
+  background: rgba(19, 194, 194, 0.2);
+  color: #13c2c2;
+  border: 1px solid rgba(19, 194, 194, 0.3);
+}
+
+.event-greenhouse {
+  background: rgba(114, 46, 209, 0.2);
+  color: #722ed1;
+  border: 1px solid rgba(114, 46, 209, 0.3);
+}
+
+.summary-box {
+  background: rgba(0, 212, 255, 0.05);
+  border: 1px solid rgba(0, 212, 255, 0.2);
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  line-height: 1.8;
+}
+
+.finding-item {
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.recommendation-item {
+  padding: 12px;
+  background: linear-gradient(90deg, rgba(82, 196, 26, 0.1) 0%, transparent 100%);
+  border-left: 3px solid #52c41a;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.allocation-section {
+  margin-bottom: 20px;
+}
+
+.allocation-section h4 {
+  color: #00d4ff;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.lab-item {
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.priority-high {
+  color: #ff4d4f;
+  font-weight: 600;
+}
+
+.priority-medium {
+  color: #faad14;
+  font-weight: 600;
+}
+
+.priority-low {
+  color: #52c41a;
+  font-weight: 600;
+}
+
+.upload-area {
+  border: 2px dashed rgba(0, 212, 255, 0.3) !important;
+  background: rgba(0, 212, 255, 0.02) !important;
+  border-radius: 12px;
+}
+
+.upload-area:hover {
+  border-color: #00d4ff !important;
+}
+
+.status-success {
+  color: #52c41a;
+}
+
+.status-error {
+  color: #ff4d4f;
+}
+
+.status-pending {
+  color: #faad14;
+}
+
+.ice-table .ant-table {
+  background: transparent !important;
+}
+
+.ice-table .ant-table-thead > tr > th {
+  background: rgba(0, 212, 255, 0.1) !important;
+  color: #00d4ff !important;
+  border-bottom: 1px solid rgba(0, 212, 255, 0.2) !important;
+}
+
+.ice-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05) !important;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.ice-table .ant-table-tbody > tr:hover > td {
+  background: rgba(0, 212, 255, 0.05) !important;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
+
+.log-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1200px) {
+  .log-detail-container {
+    grid-template-columns: 1fr;
+  }
+}
